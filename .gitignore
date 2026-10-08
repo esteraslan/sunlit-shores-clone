@@ -1,0 +1,13 @@
+# deps & build
+node_modules/
+dist/
+
+# Blender
+*.blend1
+*.blend2
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log

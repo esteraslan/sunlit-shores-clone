@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunlit Shores - tiny trails</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="loader"><div class="spinner"></div><span>memuat pulau dari Blender…</span></div>
+      <canvas id="scene" tabindex="0"></canvas>
+      
+      <!-- TOP LEFT -->
+      <div class="top-left">
+        <div class="brand">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M4.9 19.1l14.2-14.2"/></svg>
+          tiny trails<span style="color:#ffb800">.</span>
+        </div>
+        <div class="breadcrumb">
+          <span class="dot"></span> STAGE 01 <span class="slash">/</span> THE FIRST FOOTSTEPS
+        </div>
+        <h1 class="title">Sunlit<br/>Shores</h1>
+        <p class="subtitle">Let curiosity lead the way.</p>
+        <div class="tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 14l6-6M9 8h6v6"/></svg>
+          Ancient ruins
+        </div>
+      </div>
+
+      <!-- TOP RIGHT -->
+      <div class="top-right">
+        <div class="controls-header">
+          <span class="adventure-text">A LITTLE ADVENTURE</span>
+          <div class="btn-group">
+            <button>+</button><button>-</button><button>⟲</button><button>🔊</button><button>⏸</button>
+          </div>
+        </div>
+        
+        <div class="star-card cream-card">
+          <div class="star-left">
+            <div class="star-score"><span class="star-icon">⭐</span> 2<small>/5</small></div>
+          </div>
+          <div class="star-right">
+            <div class="star-title">STARS<br/>DISCOVERED</div>
+          </div>
+          <div class="star-desc">A little wonder around every corner.</div>
+        </div>
+      </div>
+
+      <!-- BOTTOM LEFT -->
+      <div class="quest-card cream-card">
+        <div class="quest-top">
+          <span>YOUR LITTLE EXPEDITION</span>
+          <span class="quest-steps">02 - 05</span>
+        </div>
+        <div class="quest-body">
+          <div class="flag-icon">⚑</div>
+          <div class="quest-text">
+            <strong>Find the lighthouse. Open the star gate.</strong>
+            <p>Run, jump, and take the scenic route.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOTTOM HINTS -->
+      <div class="bottom-hints">
+        <span><span class="keys"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></span> Move</span>
+        <span><span class="keys"><kbd>SPACE</kbd></span> Jump <i>twice to double jump</i></span>
+        <span><span class="keys"><kbd>R</kbd></span> Return to shore</span>
+        <span>Drag / Q E Rotate view</span>
+        <span>Scroll / + - Zoom</span>
+      </div>
+      
+      <!-- MINIMAP/EXPAND BUTTON -->
+      <div class="minimap-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+      </div>
+
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
